@@ -30,7 +30,7 @@ class GGBot:
 
     def roulette_loop(self):
         while True:
-            sleep(5)
+            sleep(4)
             self.roulette_counter += 1
             try:
                 self.driver.find_element_by_xpath(
@@ -40,7 +40,7 @@ class GGBot:
                     self.driver.find_element_by_xpath(
                         '/html[1]/body[1]/div[1]/div[4]/div[2]/div[1]/div[1]/div[1]/div[6]/div[1]/label[1]/input[1]').click()
                 except:
-                    continue
+                    None
             if self.roulette_counter > 400:
                 self.driver.get("http://www.gg.pl/#roulette")
                 self.roulette_counter = 0
