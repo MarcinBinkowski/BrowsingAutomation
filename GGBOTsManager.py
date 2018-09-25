@@ -1,10 +1,6 @@
 import GGBOT
 import threading
 
-def threaded(fn):
-    def wrapper(*args, **kwargs):
-        threading.Thread(target=fn, args=args, kwargs=kwargs).start()
-    return wrapper
 
 class GGBOTsManager:
 
@@ -21,6 +17,12 @@ class GGBOTsManager:
             self.bot = GGBOT.GGBot(tuple[0],tuple[1])
             self.bots_list.append(self.bot)
 
+    def threaded(fn):
+        def wrapper(*args, **kwargs):
+            threading.Thread(target=fn, args=args, kwargs=kwargs).start()
+
+        return wrapper
+
     @threaded
     def start_bot(self, bot_number):
         bot = self.bots_list[bot_number]
@@ -33,6 +35,44 @@ class GGBOTsManager:
             self.start_bot(i)
 
 
+
+
 if __name__ == "__main__":
     manager = GGBOTsManager()
     manager.bot_manager_start()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
