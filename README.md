@@ -7,6 +7,7 @@ GGBOT:
   2) download chromedriver.exe http://chromedriver.chromium.org/
   3) put chromedriver.exe to the same directory as GGBOT.py and GGBOTsManager.py
   4) edit GGBOTsManager.py:
+  
     1) in GGBOtsManager class find __init__ method
     2) find self.bots_data list
     3) add tuple to list with mail and password as strings ("my_email@domain.com", "my_password")
