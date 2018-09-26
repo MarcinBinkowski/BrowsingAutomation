@@ -34,7 +34,7 @@ Selenium bots to automate some tasks
   * put chromedriver.exe to the same directory as EmailCreatorBot.py, BotManager.py and FakeDataGenerator.py 
   * shift + right click in folder, choose "open command window here"
   * type "python BotManager.py"
-  * type how many account you want to create (it's recommended not to create more than 5)
+  * type how many account you want to create (it's recommended not to create more than 5 due to ip ban for creating new accounts)
   * wait until emails will be created
   * you can get emails info using database browser (data getter not supported yet)
   
