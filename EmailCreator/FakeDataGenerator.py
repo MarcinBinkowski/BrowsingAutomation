@@ -3,7 +3,9 @@ from random import randint, choice
 
 
 class FakeDataGenerator:
-
+    """
+    Class for generating data to use in EmailCreatorBot.
+    """
     def __init__(self):
         self.names = ["Jack", "John", "Adam", "Matt", "Mark", "Roman", "Paul", "Stan", "Ted", "Peter", "Robert",
                       "Alice", "Celine", "Edith", "Mary", "Natalie", "Nina", "Rose",
