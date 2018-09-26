@@ -1,7 +1,8 @@
 # BrowsingAutomation
 Selenium bots to automate some tasks
 
-GGBOT:
+## GGBOT
+
   Setup:
   * download GGBOT.py and GGBOTsManager.py
   * download chromedriver.exe http://chromedriver.chromium.org/
@@ -21,7 +22,7 @@ GGBOT:
        - exiting program doesn't terminate chromedriver
 
 
-EmailCreatorBot:
+## EmailCreatorBot:
   Setup:
   * download EmailCreatorBot.py, BotManager.py and FakeDataGenerator.py 
   * download chromedriver.exe http://chromedriver.chromium.org/
@@ -33,7 +34,6 @@ EmailCreatorBot:
   * you can get emails info using database browser (data getter not supported yet)
   
   TODO:
-  
-    - [ ] change phone number if it exceeds max accounts per phone number.
-    - [ ] rewrite code without using time.sleep()
-    - [ ] write console script for getting data from database
+  - [ ] change phone number if it exceeds max accounts per phone number.
+  - [ ] rewrite code without using time.sleep()
+  - [ ] write console script for getting data from database
