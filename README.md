@@ -17,6 +17,11 @@ Selenium bots to automate some tasks
   * type "python GGBOTsManager.py"
   * ctrl+c to exit
  
+  TODO:
+  - [ ] remove known bugs
+  - [ ] remove time.sleep() where it's not necessary
+  - [ ] change try/except blocks for selenium functions
+  
   Known bugs:
   
        - exiting program doesn't terminate chromedriver
