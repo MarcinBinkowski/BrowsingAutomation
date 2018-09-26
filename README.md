@@ -34,6 +34,6 @@ EmailCreatorBot:
   
   TODO:
   
-      - change phone number if it exceeds max accounts per phone number.
-      - rewrite code without using time.sleep()
-      - write console script for getting data from database
+    - [ ] change phone number if it exceeds max accounts per phone number.
+    - [ ] rewrite code without using time.sleep()
+    - [ ] write console script for getting data from database
