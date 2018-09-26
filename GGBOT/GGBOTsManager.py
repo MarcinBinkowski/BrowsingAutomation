@@ -9,7 +9,9 @@ class GGBOTsManager:
         to add new bot just add new tuple of strings(email, password)
         """
         self.bots_data = [
-
+            ("binq0001@gmail.com", "marcin1234"),
+            ("ffq21662@nbzmr.com", "ffq21662"),
+            ("xgq77612@nbzmr.com", "xgq77612"),
             ]
         self.bots_list = []
 
