@@ -22,6 +22,8 @@ Selenium bots to automate some tasks
   - [ ] remove time.sleep() where it's not necessary
   - [ ] change try/except blocks for selenium functions
   
+  - possibly find a workaround for ip bans (tor?)
+  
   Known bugs:
   
        - exiting program doesn't terminate chromedriver
