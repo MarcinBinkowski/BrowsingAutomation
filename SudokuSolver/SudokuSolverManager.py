@@ -34,4 +34,4 @@ class Manager:
 if __name__ == "__main__":
     x = input("How many games to play?: ")
     manager = Manager()
-    manager.bot_manager_start(x)
+    manager.bot_manager_start(int(x))
