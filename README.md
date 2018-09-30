@@ -22,14 +22,30 @@ Selenium bots to automate some tasks
   - [ ] remove time.sleep() where it's not necessary
   - [ ] change try/except blocks for selenium functions
   
-  - possibly find a workaround for ip bans (tor?)
   
   Known bugs:
   
        - exiting program doesn't terminate chromedriver
+       
+       
+       
+## SudokuSolverBot
+Setup:
+  * download SudokuSolver.py, SudokuSolverBot.py and SudokuSolverManager.py
+  * download chromedriver.exe http://chromedriver.chromium.org/
+  * put chromedriver.exe to the same directory as SudokuSolver.py, SudokuSolverBot.py and SudokuSolverManager.py
+  * shift + right click in folder, choose "open command window here"
+  * type "python SudokuSolverManager.py"
+  * type how many games u want bot to play
+  * wait untill all games are played
+
+  TODO:
+  - [x] workaround for "Max retries exceeded with URL"
+  - [ ] rewrite parts of program which use double sleep and button clicks (didn't find proper way yet)
 
 
-## EmailCreatorBot:
+## EmailCreatorBot
+  *very buggy and unfinished version*
   Setup:
   * download EmailCreatorBot.py, BotManager.py and FakeDataGenerator.py 
   * download chromedriver.exe http://chromedriver.chromium.org/
@@ -44,3 +60,4 @@ Selenium bots to automate some tasks
   - [ ] change phone number if it exceeds max accounts per phone number.
   - [ ] rewrite code without using time.sleep()
   - [ ] write console script for getting data from database
+  - possibly find a workaround for ip bans (tor?)
