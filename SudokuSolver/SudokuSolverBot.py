@@ -4,9 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from SudokuSolver import SudokuSolver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
-import requests
-from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
+
 
 class SudokuSolverBot:
 
