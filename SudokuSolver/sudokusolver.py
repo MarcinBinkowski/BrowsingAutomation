@@ -55,30 +55,28 @@ class SudokuSolver:
     def is_safe(self, row, col, number):
         return not self.used_in_row(row, number)\
                                     and not self.used_in_col(col, number) \
-                                    and not self.used_in_box(row - row%3, col - col%3, number)
+                                    and not self.used_in_box(row - row % 3, col - col % 3, number)
 
     def find_next_not_aasigned(self):
         for i in range(9):
             for j in range(9):
                 if self.board[i][j] == "-":
-                    return (i, j)
+                    return i, j
         return False
 
-
     def solve(self):
-        if self.find_next_not_aasigned() == False:
+        if self.find_next_not_aasigned() is False:
             return True
 
         x_y_pair = self.find_next_not_aasigned()
 
-        for number in range(1,10):
+        for number in range(1, 10):
             if self.is_safe(x_y_pair[0], x_y_pair[1], number) is True:
                 self.board[x_y_pair[0]][x_y_pair[1]] = number
                 if self.solve() is True:
                     return True
                 self.board[x_y_pair[0]][x_y_pair[1]] = "-"
         return False
-
 
 
 if __name__ == "__main__":
@@ -169,52 +167,3 @@ if __name__ == "__main__":
     solver.print_board()
     solver.solve()
     solver.print_board()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""    solver.add_to_board(0,0,6)
-    solver.add_to_board(0,1,5)
-    solver.add_to_board(0,2,9)
-    solver.add_to_board(0,4,1)
-    solver.add_to_board(0,6,2)
-    solver.add_to_board(0,7,8)
-    solver.add_to_board(1,0,1)
-    solver.add_to_board(1,4,5)
-    solver.add_to_board(1,7,3)
-    solver.add_to_board(2,0,2)
-    solver.add_to_board(2,3,8)
-    solver.add_to_board(2,7,1)
-    solver.add_to_board(3,3,1)
-    solver.add_to_board(3,4,3)
-    solver.add_to_board(3,5,5)
-    solver.add_to_board(3,7,7)
-    solver.add_to_board(4,0,8)
-    solver.add_to_board(4,3,9)
-    solver.add_to_board(4,8,2)
-    solver.add_to_board(5,2,3)
-    solver.add_to_board(5,4,7)
-    solver.add_to_board(5,5,8)
-    solver.add_to_board(5,6,6)
-    solver.add_to_board(5,7,4)
-    solver.add_to_board(6,0,3)
-    solver.add_to_board(6,2,2)
-    solver.add_to_board(6,5,9)
-    solver.add_to_board(6,8,4)
-    solver.add_to_board(7,5,1)
-    solver.add_to_board(7,6,8)
-    solver.add_to_board(8,2,8)
-    solver.add_to_board(8,3,7)
-    solver.add_to_board(8,4,6)"""

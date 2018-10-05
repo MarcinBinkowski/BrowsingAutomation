@@ -1,4 +1,4 @@
-import GGBOT
+from ggbot import GGBot
 import threading
 
 
@@ -16,7 +16,7 @@ class GGBOTsManager:
         self.bots_list = []
 
         for tuple in self.bots_data:
-            self.bot = GGBOT.GGBot(tuple[0], tuple[1])
+            self.bot = GGBot(tuple[0], tuple[1])
             self.bots_list.append(self.bot)
 
     def threaded(fn):
