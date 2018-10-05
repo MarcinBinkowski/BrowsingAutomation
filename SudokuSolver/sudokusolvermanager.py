@@ -13,7 +13,7 @@ class Manager:
 
     def __init__(self):
         self.bots_data = [
-
+        # ("login", "password")
         ]
         self.bots_list = []
 
@@ -35,6 +35,6 @@ class Manager:
 
 
 if __name__ == "__main__":
-    x = input("How many games to play?: ")
+    user_input = input("How many games to play?: ")
     manager = Manager()
     manager.bot_manager_start(int(x))
