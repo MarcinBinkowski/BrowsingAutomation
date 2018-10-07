@@ -4,17 +4,17 @@ Selenium bots to automate some tasks
 ## GGBOT
 
   Setup:
-  * download GGBOT.py and GGBOTsManager.py
+  * download ggbot.py and ggbotsmanager.py
   * download chromedriver.exe http://chromedriver.chromium.org/
-  * put chromedriver.exe to the same directory as GGBOT.py and GGBOTsManager.py
+  * put chromedriver.exe to the same directory as ggbot.py and ggbotsmanager.py
   * edit GGBOTsManager.py:
 
-      * in GGBOtsManager class find __init__ method
+      * in ggbotsmanager class find __init__ method
       * find self.bots_data list
       * add tuple to list with mail and password as strings ("my_email@domain.com", "my_password")
       * save file
   * shift + right click in folder, choose "open command window here"
-  * type "python GGBOTsManager.py"
+  * type "python ggbotsmanager.py"
   * ctrl+c to exit
  
   TODO:
@@ -31,11 +31,11 @@ Selenium bots to automate some tasks
        
 ## SudokuSolverBot
 Setup:
-  * download SudokuSolver.py, SudokuSolverBot.py and SudokuSolverManager.py
+  * download sudokusolver.py, sudokusolverBot.py and sudokusolvermanager.py
   * download chromedriver.exe http://chromedriver.chromium.org/
-  * put chromedriver.exe to the same directory as SudokuSolver.py, SudokuSolverBot.py and SudokuSolverManager.py
+  * put chromedriver.exe to the same directory as sudokusolver.py, sudokusolverbot.py and sudokusolvermanager.py
   * shift + right click in folder, choose "open command window here"
-  * type "python SudokuSolverManager.py"
+  * type "python sudokusolversanager.py"
   * type how many games u want bot to play
   * wait untill all games are played
 
@@ -46,6 +46,7 @@ Setup:
 
 ## EmailCreatorBot
   *very buggy and unfinished version*
+  
   Setup:
   * download EmailCreatorBot.py, BotManager.py and FakeDataGenerator.py 
   * download chromedriver.exe http://chromedriver.chromium.org/
