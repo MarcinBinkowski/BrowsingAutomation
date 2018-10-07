@@ -1,5 +1,5 @@
 # BrowsingAutomation
-Selenium bots to automate some tasks
+Selenium bots, written for educational purposes only!
 
 ## GGBOT
 
