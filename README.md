@@ -7,7 +7,7 @@ Selenium bots to automate some tasks
   * download ggbot.py and ggbotsmanager.py
   * download chromedriver.exe http://chromedriver.chromium.org/
   * put chromedriver.exe to the same directory as ggbot.py and ggbotsmanager.py
-  * edit GGBOTsManager.py:
+  * edit ggbotsmanager.py:
 
       * in ggbotsmanager class find __init__ method
       * find self.bots_data list
@@ -36,7 +36,7 @@ Setup:
   * put chromedriver.exe to the same directory as sudokusolver.py, sudokusolverbot.py and sudokusolvermanager.py
   * shift + right click in folder, choose "open command window here"
   * type "python sudokusolversanager.py"
-  * type how many games u want bot to play
+  * type how many games u want bots to play
   * wait untill all games are played
 
   TODO:
